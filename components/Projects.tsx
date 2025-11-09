@@ -39,6 +39,7 @@ const Projects = () => {
       <div className="w-full flex flex-wrap  gap-4 ">
 
       {experiences.map((exp) => (
+        
           <ProjectCard key={exp.role} {...exp} />
         ))}
         </div>

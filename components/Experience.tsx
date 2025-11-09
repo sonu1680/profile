@@ -35,7 +35,7 @@ const Experience = () => {
         desc="Here's a timeline of my professional journey, showcasing my roles and contributions in blockchain and full-stack development."
       />
       {experiences.map((exp) => (
-        <ExperienceCard key={exp.role} {...exp} />
+          <ExperienceCard {...exp} key={exp.company} />
       ))}
     </div>
   );

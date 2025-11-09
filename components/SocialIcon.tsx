@@ -30,11 +30,11 @@ const SocialIcon: React.FC<SocialIconProps> = ({ title,link }) => {
       <Tooltip>
         <TooltipTrigger asChild>
           <Button
-            className="p-2 rounded-full bg-transparent  transition-all duration-300 cursor-pointer hover:bg-gray-900 "
+            className="p-2 rounded-full bg-transparent  cursor-pointer hover:bg-gray-600 hover:border-gray-300 transition-all duration-300 ease-in "
             aria-label={title}
           >
             <a href={link}>
-            <Icon size={25} className=" hover:text-blue-600" />
+              <Icon size={25} className=" hover:text-blue-600" />
             </a>
           </Button>
         </TooltipTrigger>

@@ -26,7 +26,7 @@ const tags = [
 
 const Skills = () => {
   return (
-    <div className="experience w-full px-10   ">
+    <div className="experience w-full md:px-4   ">
       <Heading
         title="Skills"
         desc="A collection of my work spanning from blockchain applications to full-stack projects, both personal and professional."
