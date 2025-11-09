@@ -2,31 +2,52 @@ import React from 'react'
 import Heading from './Heading';
 import ProjectCard from './ProjectCard';
 
-export const experiences = [
+export const projects = [
   {
-    role: "Full-Stack Blockchain Engineer",
-    company: "Wildcard",
-    status: "Current",
+    title: "TeachCares MIS System",
     description:
-      "Building smart wallet infrastructure and blockchain applications",
-    tags: ["Rust", "Solana", "EVM", "Next.js"],
+      "A full-stack school management system with modules for attendance, scheduling, exams, and faculty dashboards. Includes Docker-based deployment and CI/CD pipelines on AWS.",
+    tags: [
+      "Next.js",
+      "Node.js",
+      "Express",
+      "TypeScript",
+      "Docker",
+      "AWS",
+      "CI/CD",
+    ],
+    link: "https://teachcares.sonupandit.in",
   },
   {
-    role: "Smart Contract Developer",
-    company: "ChainLabs",
-    status: "2023 – 2024",
+    title: "Cricket Fantasy App",
     description:
-      "Developed and audited Solidity contracts for DeFi protocols, integrating secure EVM components.",
-    tags: ["Solidity", "Hardhat", "TypeScript", "Ethereum"],
+      "A real-time fantasy cricket platform supporting 100K+ users with live data updates every second, admin panel for contests, and smart team analytics.",
+    tags: [
+      "React Native",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Express",
+      "Socket.io",
+    ],
+    link: "https://www.whatsspot.in",
   },
   {
-    role: "Backend Developer",
-    company: "TechNova",
-    status: "2021 – 2023",
+    title: "SolLink",
     description:
-      "Built scalable microservices and APIs for fintech applications using Rust and PostgreSQL.",
-    tags: ["Rust", "PostgreSQL", "Docker", "gRPC"],
+      "A Solana-based dApp that enables users to send and receive cryptocurrency via shareable links with Phantom wallet integration and secure transaction signing.",
+    tags: ["Next.js", "Solana", "TypeScript", "Web3.js", "Phantom Wallet"],
+    link: "https://sollink.sonupandit.in",
   },
+  {
+    title: "UptimeGuard",
+    description:
+      "A distributed website uptime monitoring tool that processes 10,000+ checks per minute using Redis queues and PostgreSQL for real-time status tracking.",
+    tags: ["Next.js", "Node.js", "Redis", "PostgreSQL", "Prisma", "Docker"],
+    link: "https://uptimeguard.sonupandit.in",
+  },
+ 
+
 ];
 
 const Projects = () => {
@@ -37,12 +58,10 @@ const Projects = () => {
         desc="A collection of my work spanning from blockchain applications to full-stack projects, both personal and professional."
       />
       <div className="w-full flex flex-wrap  gap-4 ">
-
-      {experiences.map((exp) => (
-        
-          <ProjectCard key={exp.role} {...exp} />
+        {projects.map((exp,idx) => (
+          <ProjectCard key={idx} {...exp} />
         ))}
-        </div>
+      </div>
     </div>
   );
 }

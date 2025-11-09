@@ -3,29 +3,21 @@ import Heading from './Heading';
 import ExperienceCard from './Card';
 export const experiences = [
   {
-    role: "Full-Stack Blockchain Engineer",
-    company: "Wildcard",
-    status: "Current",
+    role: "Backend Engineer",
+    company: "Celebal Technologies",
+    status: "2025 – 2025",
     description:
-      "Building smart wallet infrastructure and blockchain applications",
-    tags: ["Rust", "Solana", "EVM", "Next.js"],
+      "Build a infracture for realtime communication using nodejs and websockets.",
+    tags: ["Websocket", "Express.js", "Node.js", "Next.js"],
   },
   {
-    role: "Smart Contract Developer",
-    company: "ChainLabs",
-    status: "2023 – 2024",
-    description:
-      "Developed and audited Solidity contracts for DeFi protocols, integrating secure EVM components.",
-    tags: ["Solidity", "Hardhat", "TypeScript", "Ethereum"],
-  },
-  {
-    role: "Backend Developer",
-    company: "TechNova",
-    status: "2021 – 2023",
-    description:
-      "Built scalable microservices and APIs for fintech applications using Rust and PostgreSQL.",
-    tags: ["Rust", "PostgreSQL", "Docker", "gRPC"],
-  },
+  role: "Software Engineer",
+  company: "TeachCares",
+  status: "2024 – 2025",
+  description:
+    "Led the development of the TeachCares MIS System — a full-stack platform designed to digitalize school management, including attendance, scheduling, exams, and faculty dashboards. Built a scalable backend architecture using Node.js, Express, and TypeScript with Docker-based multi-stage deployments on AWS. Implemented a robust GitHub Actions CI/CD pipeline for automated testing and deployment, ensuring smooth and reliable production releases.",
+  tags: ["Node.js", "Express.js", "TypeScript", "Next.js", "Docker", "AWS", "CI/CD","Prisma"],
+}
 ];
 const Experience = () => {
   return (

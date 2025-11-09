@@ -4,24 +4,17 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 const tags = [
-  { title: "JavaScript", icon: "/favicon.ico" },
-  { title: "TypeScript", icon: "/favicon.ico" },
-  { title: "React", icon: "/favicon.ico" },
-  { title: "Next.js", icon: "/favicon.ico" },
-  { title: "Node.js", icon: "/favicon.ico" },
-  { title: "Express", icon: "/favicon.ico" },
-  { title: "MongoDB", icon: "/favicon.ico" },
-  { title: "PostgreSQL", icon: "/favicon.ico" },
-  { title: "Solidity", icon: "/favicon.ico" },
-  { title: "Rust", icon: "/favicon.ico" },
-  { title: "Web3.js", icon: "/favicon.ico" },
-  { title: "Ethers.js", icon: "/favicon.ico" },
-  { title: "Hardhat", icon: "/favicon.ico" },
-  { title: "Docker", icon: "/favicon.ico" },
-  { title: "Git", icon: "/favicon.ico" },
-  { title: "HTML", icon: "/favicon.ico" },
-  { title: "CSS", icon: "/favicon.ico" },
-  { title: "Tailwind CSS", icon: "/favicon.ico" },
+  { title: "JavaScript", icon: "/javascript.svg" },
+  { title: "TypeScript", icon: "/typescript.svg" },
+  { title: "React", icon: "/react.svg" },
+  { title: "Next.js", icon: "/nextjs.svg" },
+  { title: "Node.js", icon: "/nodejs.svg" },
+  { title: "Express", icon: "/express.svg" },
+  { title: "PostgreSQL", icon: "/postgresql.svg" },
+  { title: "Docker", icon: "/docker.svg" },
+  { title: "Git", icon: "/git.svg" },
+
+  { title: "Prisma", icon: "/prisma.svg" },
 ];
 
 const Skills = () => {
@@ -39,7 +32,7 @@ const Skills = () => {
               "bg-[#1e1e1e] text-gray-300 text-lg px-3 py-1 rounded-md flex flex-row gap-x-2 border border-gray-700 "
             )}
           >
-            <Image alt="img" src={tag.icon} height={10} width={30}  className="aspect-square " />
+            <Image alt="img" src={tag.icon} height={10} width={20}  className="aspect-square " />
             {tag.title}
           </div>
         ))}

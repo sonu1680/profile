@@ -27,7 +27,7 @@ export default function About() {
         <div className="flex justify-between mb-6 ">
           <div className="w-28 h-28 rounded-2xl overflow-hidden">
             <Image
-              src="/favicon.ico"
+              src="/myPic.png"
               alt="Chaitanya"
               width={112}
               height={112}
@@ -42,7 +42,7 @@ export default function About() {
         </div>
 
         <h1 className=" text-xl md:text-3xl font-bold text-white mb-2">Hi, I'm Sonu</h1>
-        <p className="text-gray-400 mb-6">21, Delhi | Full Stack Engineer</p>
+        <p className="text-gray-400 mb-6">22, Ahmedabad | Full Stack Engineer</p>
 
         <p className="text-gray-400 leading-relaxed text-xs md:text-sm ">
           I'm a Full Stack Blockchain Developer crafting cutting-edge dApps and
