@@ -8,7 +8,7 @@ const Tags = ({ tags, className }: { tags: string[],className?:string }) => {
         <span
           key={tag}
           className={cn(
-            "bg-[#1e1e1e] text-gray-300 text-xs px-3 py-1 rounded-md",
+            "bg-[#1e1e1e] text-gray-300 text-xs px-3 py-1 rounded-md border border-transparent hover:border-gray-500 transition-all duration-300",
             className
           )}
         >

@@ -1,4 +1,3 @@
-import React from "react";
 import Heading from "./Heading";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -22,17 +21,23 @@ const Skills = () => {
     <div className="experience w-full md:px-4   ">
       <Heading
         title="Skills"
-        desc="A collection of my work spanning from blockchain applications to full-stack projects, both personal and professional."
+        desc="My skill set – technologies and tools I work with regularly"
       />
       <div className="flex flex-wrap gap-2 mt-4">
         {tags.map((tag) => (
           <div
             key={tag.title}
             className={cn(
-              "bg-[#1e1e1e] text-gray-300 text-lg px-3 py-1 rounded-md flex flex-row gap-x-2 border border-gray-700 "
+              "bg-[#1e1e1e] text-gray-300 text-lg px-3 py-1 rounded-md flex flex-row gap-x-2 border border-gray-700 transition-all duration-300 hover:-translate-y-1 cursor-pointer "
             )}
           >
-            <Image alt="img" src={tag.icon} height={10} width={20}  className="aspect-square " />
+            <Image
+              alt="img"
+              src={tag.icon}
+              height={10}
+              width={20}
+              className="aspect-square "
+            />
             {tag.title}
           </div>
         ))}

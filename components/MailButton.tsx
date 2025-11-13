@@ -1,6 +1,6 @@
 "use client";
 
-import { Download, Mail } from "lucide-react";
+import { Download, Mail, Notebook } from "lucide-react";
 import { Button } from "./ui/button";
 
 const MailButton = () => {
@@ -10,9 +10,20 @@ const MailButton = () => {
   };
 
   const handleResumeDownload = () => {
-    window.open("https://your-resume-url.com/sonu_resume.pdf", "_blank");
+    window.open(
+      "https://drive.google.com/file/d/1OeIIhH1BxAakn49Ha8hPCpbTtAXJA6yl/view?usp=sharing",
+      "_blank"
+    );
   };
-  return (
+  const handleNotion = () => {
+    window.open(
+      "https://dear-foam-0d1.notion.site/SONU-KUMAR-PANDIT-1f72c54891c080d3bde4d0258514a5fa?pvs=4",
+      "_blank"
+    );
+  };
+
+  
+  https: return (
     <div className="contact flex flex-row md:flex-wrap gap-4 justify-start mt-4  ">
       <Button
         className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-2xl shadow-md transition-all duration-300 hover:scale-105 cursor-pointer text-xs md:text-sm "
@@ -23,9 +34,16 @@ const MailButton = () => {
 
       <Button
         onClick={handleResumeDownload}
-        className="px-6  py-3 bg-gradient-to-r from-green-400 to-blue-500 text-white font-medium rounded-2xl shadow-md transition-all duration-300 hover:from-green-500 hover:to-blue-600 hover:scale-105 cursor-pointer text-xs md:text-sm"
+        className="px-6  py-3 bg-linear-to-r from-green-400 to-blue-500 text-white font-medium rounded-2xl shadow-md transition-all duration-300 hover:from-green-500 hover:to-blue-600 hover:scale-105 cursor-pointer text-xs md:text-sm"
       >
-        <Download />  Resume 
+        <Download /> Resume
+      </Button>
+
+      <Button
+        onClick={handleNotion}
+        className="px-6  py-3 bg-linear-to-r from-gray-800 to-gray-500 text-white font-medium rounded-2xl shadow-md transition-all duration-300  hover:scale-105 cursor-pointer text-xs md:text-sm"
+      >
+        <Notebook /> Notion
       </Button>
     </div>
   );
